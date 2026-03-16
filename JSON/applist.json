@@ -101,6 +101,13 @@
       "name": "Development",
       "apps": [
         {
+          "id": "vscode",
+          "name": "Visual Studio Code",
+          "download": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/VSCode-darwin-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "com.microsoft.VSCode"
+        },
+        {
           "id": "pycharm",
           "name": "PyCharm",
           "download": "https://download-cdn.jetbrains.com/python/pycharm-2025.3.2.1-aarch64.dmg",
@@ -136,14 +143,8 @@
           "bundleId": "dev.zed.Zed"
         },
         {
-          "id": "vscode",
-          "name": "Visual Studio Code",
-          "download": "https://update.code.visualstudio.com/latest/darwin-arm64/stable",
-          "bundleId": "com.microsoft.VSCode"
-        },
-        {
           "id": "github",
-          "name": "GitHub",
+          "name": "GitHub Desktop",
           "download": "https://desktop.githubusercontent.com/releases/3.5.4-9dfb8d8d/GitHubDesktop-arm64.zip",
           "type": "zip",
           "bundleId": "com.github.GitHub"
@@ -319,7 +320,7 @@
       "name": "Utilities",
       "apps": [
         {
-          "id": "balenaetcher",
+          "id": "etcher",
           "name": "balenaEtcher",
           "download": "https://release-assets.githubusercontent.com/github-production-release-asset/45055693/edff89ae-e510-4dd1-8264-3ef87367c866?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T16%3A14%3A48Z&rscd=attachment%3B+filename%3DbalenaEtcher-2.1.4-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T15%3A14%3A07Z&ske=2026-02-04T16%3A14%3A48Z&sks=b&skv=2018-11-09&sig=GOTcdJCgZCsyMl12mGHUTnR7ihGSRCMlsTsdFCdQcX8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDIyMjIzNCwibmJmIjoxNzcwMjE4NjM0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.G5RqmHYfHeAKHheW_RTeonG9m8sKa8iHDz-gPV6rF_E&response-content-disposition=attachment%3B%20filename%3DbalenaEtcher-2.1.4-arm64.dmg&response-content-type=application%2Foctet-stream",
           "type": "dmg",

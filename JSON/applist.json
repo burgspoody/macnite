@@ -115,7 +115,7 @@
           "bundleId": "com.jetbrains.pycharm"
         },
         {
-          "id": "intellij",
+          "id": "idea",
           "name": "IntelliJ IDEA",
           "download": "https://download-cdn.jetbrains.com/idea/idea-2025.3.2-aarch64.dmg",
           "type": "dmg",

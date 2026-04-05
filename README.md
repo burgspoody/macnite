@@ -4,7 +4,7 @@ The simple, hassle-free app installer for macOS.
 
 MacNite is an app installer for macOS that lets the user install the apps they want in an easy way.
 
-## How to use MacNite:
+## How to use MacNite
 
 1. Visit [macnite.net](https://burgspoody.github.io/macnite-website)
 2. Select the apps you want to install
@@ -14,7 +14,16 @@ MacNite is an app installer for macOS that lets the user install the apps they w
 6. Open the link in MacNite (if prompted)
 7. MacNite will install the selected apps automatically
 
-## Supported Apps:
+## About the Software in Macnite
+
+- MacNite downloads the only the apps given in the website.
+  - No additional software, malware, or any kind of software aside from those specified in the website is installed.
+- MacNite installs the apps from their official download links from their respective websites.
+  - You can view the [app list](https://github.com/burgSpoody/macnite-website/blob/e015f2fec57a1826b8560144a6f63eee1a734706/applist.json) to verify that the apps are being downloaded from their official websites.
+- MacNite doesn't redistribute software in any way.
+  - It acts as a medium between the computer and the official websites of the apps to simplify the process of installing the apps the user needs.
+
+## Supported Apps
 
 **Browsers**:
 [Firefox](https://www.firefox.com/), [Chrome](https://www.google.com/chrome/), [Edge](https://www.microsoft.com/edge/), [Arc](https://arc.net/), [Brave](https://brave.com/)
@@ -43,32 +52,35 @@ MacNite is an app installer for macOS that lets the user install the apps they w
 **Security**:
 [Bitwarden](https://bitwarden.com/), [Malwarebytes](https://www.malwarebytes.com/), [Deadbolt](https://github.com/alichtman/deadbolt)
 
-## Download MacNite:
+**More apps will be added to MacNite as time progresses.**
+
+## Download MacNite
 
 - MacNite is currently in development.
 - Download will be available here when ready.
 
-## Requirements to use MacNite:
+## Requirements to use MacNite
 
 - Mac with an Apple Silicon processor (M1 or later)
 - Recommended to use macOS Tahoe 26 (Latest Version)
 - (Might work on older macOS versions but it is not recommended)
 
-## Status:
+## Status
 MacNite is currently in active development and is not yet available for download.
 
-## Contribute to MacNite:
+## Contribute to MacNite
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md).
+Please read [CONTRIBUTING](CONTRIBUTING.md).
 
-## License:
+## License
 
-See [LICENSE](LICENSE) for details.
+See [LICENSE](LICENSE.md) for details.
 
-MacNite is not affiliated with Ninite in any way.
+- MacNite is not affiliated with Ninite in any way.
 
-But MacNite is inspired by Ninite for the installation process and logic.
+- MacNite is inspired by Ninite for the installation process and logic.
 
-## Author:
+### Author
 
-Made by [burgSpoody](https://github.com/burgSpoody)
+- Made by Varun Aadhithan [(burgSpoody)](https://github.com/burgSpoody) 😃
+- **Email: macnite.email@icloud.com**

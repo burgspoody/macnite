@@ -55,7 +55,7 @@ function generateApps(data) {
       });
 
       const img = document.createElement('img');
-      img.src = `Icons/WebP/${app.id}-dark.webp`;
+      img.src = `icons/WebP/${app.id}-dark.webp`;
       img.alt = app.name;
       img.width = 100;
       img.height = 100;

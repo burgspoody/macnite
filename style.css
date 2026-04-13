@@ -78,7 +78,7 @@ body {
 .nav-item {
   padding: 7px 10px;
   font-size: 0.813rem;
-  color: #AAAAAA;
+  color: #FFFFE4;
   text-decoration: none;
   border-radius: 6px;
   transition: 0.1s ease-in-out;
@@ -165,7 +165,7 @@ body {
   font-size: 0.813rem;
   cursor: not-allowed;
   opacity: 0.4;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.2s ease, color 0.2s ease;
 }
 
 #launch-macnite.visible {
@@ -223,7 +223,7 @@ body {
   align-items: center;
   gap: 10px;
   padding: 8px 12px;
-  background-color: #161616;
+  background-color: #0F0F0F;
   border: 1px solid #2A2A2A;
   border-radius: 8px;
   cursor: pointer;
@@ -239,12 +239,12 @@ body {
 .app-card.selected {
   opacity: 1;
   border-color: #5D78FF;
-  background-color: #0D1A3A;
+  background-color: #0F0F0F;
 }
 
 .app-icon {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   border-radius: 7px;
   flex-shrink: 0;
 }

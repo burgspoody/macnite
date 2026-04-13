@@ -1,8 +1,9 @@
 let hasInteracted = false;
 let allCategories = [];
 let activeFilter = 'all';
+const selectedApps = new Set();
 
-// Load app list
+// ── Load app list ──────────────────────────────────────────────
 
 fetch('applist.json')
     .then(response => response.json())
@@ -12,7 +13,7 @@ fetch('applist.json')
         updateCount();
     });
 
-// Render apps (respects active filter + search query)
+// ── Render apps (respects active filter + search query) ────────
 
 function renderApps() {
     const query = document.getElementById('search-input').value.toLowerCase().trim();
@@ -45,13 +46,17 @@ function renderApps() {
             card.dataset.id = app.id;
             card.title = app.description || '';
 
-            // Restore selected state if previously selected
-            const wasSelected = document.querySelector(`.app-card.selected[data-id="${app.id}"]`);
-            if (wasSelected) card.classList.add('selected');
+            if (selectedApps.has(app.id)) card.classList.add('selected');
 
             card.addEventListener('click', () => {
                 hasInteracted = true;
-                card.classList.toggle('selected');
+                if (selectedApps.has(app.id)) {
+                    selectedApps.delete(app.id);
+                    card.classList.remove('selected');
+                } else {
+                    selectedApps.add(app.id);
+                    card.classList.add('selected');
+                }
                 updateCount();
             });
 
@@ -78,19 +83,18 @@ function renderApps() {
     });
 }
 
-// Update selected count + button state
+// ── Update selected count + button state ───────────────────────
 
 function updateCount() {
-    const selectedCards = document.querySelectorAll('.app-card.selected');
-    const count = selectedCards.length;
-
+    const count = selectedApps.size;
     document.getElementById('selected-count').textContent =
         count === 1 ? '1 app selected' : `${count} apps selected`;
-
     document.getElementById('install-btn').disabled = count === 0;
+    if (count === 0) {
+        document.getElementById('launch-macnite').classList.remove('visible');
+    }
 }
-
-//  Category nav filtering
+// ── Category nav filtering ─────────────────────────────────────
 
 document.getElementById('category-nav').addEventListener('click', e => {
     const item = e.target.closest('.nav-item');
@@ -104,26 +108,23 @@ document.getElementById('category-nav').addEventListener('click', e => {
     renderApps();
 });
 
-// Search filtering
+// ── Search filtering ───────────────────────────────────────────
 
 document.getElementById('search-input').addEventListener('input', () => {
     renderApps();
 });
 
-//  Install button
+// ── Install button ─────────────────────────────────────────────
 
 document.getElementById('install-btn').addEventListener('click', e => {
     e.stopPropagation();
 
-    const selectedCards = document.querySelectorAll('.app-card.selected');
-    const selectedApps = Array.from(selectedCards).map(card => card.dataset.id);
-
-    console.log(JSON.stringify({ selectedApps }));
+    console.log(JSON.stringify({ selectedApps: Array.from(selectedApps) }));
 
     document.getElementById('launch-macnite').classList.add('visible');
 });
 
-// Launch MacNite button
+// ── Launch MacNite button ──────────────────────────────────────
 
 document.getElementById('launch-macnite').addEventListener('click', e => {
     e.stopPropagation();
@@ -131,8 +132,6 @@ document.getElementById('launch-macnite').addEventListener('click', e => {
     const launchBtn = document.getElementById('launch-macnite');
     if (!launchBtn.classList.contains('visible')) return;
 
-    const selectedCards = document.querySelectorAll('.app-card.selected');
-    const appList = Array.from(selectedCards).map(card => card.dataset.id).join(',');
-
+    const appList = Array.from(selectedApps).join(',');
     window.location.href = `macnite://install?apps=${appList}`;
 });

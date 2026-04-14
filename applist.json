@@ -18,7 +18,7 @@
           "download": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
           "type": "dmg",
           "bundleId": "com.google.Chrome",
-          "description": "Free and modern web browser"
+          "description": "Modern web browser"
         },
         {
           "id": "edge",
@@ -29,66 +29,44 @@
           "description": "AI-powered web browser"
         },
         {
-          "id": "arc",
-          "name": "Arc",
-          "download": "https://releases.arc.net/release/Arc-1.132.1-74390.dmg",
-          "type": "dmg",
-          "bundleId": "company.thebrowser.Browser",
-          "description": "Web browser with a customizable design"
-        },
-        {
           "id": "brave",
           "name": "Brave",
           "download": "https://referrals.brave.com/latest/BRV010/Brave-Browser.dmg",
           "type": "dmg",
           "bundleId": "com.brave.Browser",
           "description": "Privacy-focused web browser"
-        }
-      ]
-    },
-    {
-      "id": "media",
-      "name": "Media",
-      "apps": [
-        {
-          "id": "spotify",
-          "name": "Spotify",
-          "download": "https://download.scdn.co/SpotifyInstaller.zip",
-          "type": "app-installer",
-          "bundleId": "com.spotify.client",
-          "description": "Online music streaming app"
         },
         {
-          "id": "vlc",
-          "name": "VLC",
-          "download": "https://mirror.del.albony.in/videolan-ftp/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
+          "id": "vivaldi",
+          "name": "Vivaldi",
+          "download": "https://downloads.vivaldi.com/stable/Vivaldi.7.9.3970.50.universal.dmg",
           "type": "dmg",
-          "bundleId": "org.videolan.vlc",
-          "description": "Media player with wide compatibility"
+          "bundleId": "com.vivaldi.Vivaldi",
+          "description": "Customizable web browser"
         },
         {
-          "id": "vox",
-          "name": "VOX",
-          "download": "https://cdn.vox.rocks/vox-player/releases/latest/VOX.dmg",
+          "id": "arc",
+          "name": "Arc",
+          "download": "https://releases.arc.net/release/Arc-1.132.1-74390.dmg",
           "type": "dmg",
-          "bundleId": "com.coppertino.Vox",
-          "description": "Music player with lossless quality support"
+          "bundleId": "company.thebrowser.Browser",
+          "description": "Vertical-tab-based web browser"
         },
         {
-          "id": "iina",
-          "name": "IINA",
-          "download": "https://dl.iina.io/IINA.v1.4.1.dmg",
+          "id": "zen",
+          "name": "Zen",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/778556932/d3c37d49-c0bf-4cc9-99dd-b7c6c20f81c6?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-12T16%3A55%3A27Z&rscd=attachment%3B+filename%3Dzen.macos-universal.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-12T15%3A54%3A29Z&ske=2026-04-12T16%3A55%3A27Z&sks=b&skv=2018-11-09&sig=M8zOW9AGwQdu%2Fk%2BRNeKeXm7jVSeFHbMpbiVcUzEaKKE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NjAxNDMxNywibmJmIjoxNzc2MDEwNzE3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dV8lZ3mlHeDMxdNoWh6iHVFZoW_ShXJ6OCOG01udujI&response-content-disposition=attachment%3B%20filename%3Dzen.macos-universal.dmg&response-content-type=application%2Foctet-stream",
           "type": "dmg",
-          "bundleId": "com.colliderli.iina",
-          "description": "Modern media player for macOS"
+          "bundleId": "app.zen-browser.zen",
+          "description": "Vertical-tab-based web browser"
         },
         {
-          "id": "obs",
-          "name": "OBS",
-          "download": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.0.4-macos-apple.dmg",
+          "id": "orion",
+          "name": "Orion",
+          "download": "https://cdn.kagi.com/downloads/OrionInstaller.dmg",
           "type": "dmg",
-          "bundleId": "com.obsproject.obs-studio",
-          "description": "Screen-recording and live-streaming software"
+          "bundleId": "com.kagi.kagimacOS",
+          "description": "Safari-based customizable browser"
         }
       ]
     },
@@ -97,12 +75,20 @@
       "name": "Communication",
       "apps": [
         {
+          "id": "thunderbird",
+          "name": "Thunderbird",
+          "download": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/149.0.2/mac/en-US/Thunderbird%20149.0.2.dmg",
+          "type": "dmg",
+          "bundleId": "org.mozilla.thunderbird",
+          "description": "Powerful email client"
+        },
+        {
           "id": "discord",
           "name": "Discord",
           "download": "https://discord.com/api/download?platform=osx",
           "type": "dmg",
           "bundleId": "com.hnc.Discord",
-          "description": "Cross-platform text, voice, and video communication app"
+          "description": "All-in-one communication app"
         },
         {
           "id": "whatsapp",
@@ -151,6 +137,52 @@
           "type": "dmg",
           "bundleId": "com.tinyspeck.slackmacgap",
           "description": "AI-powered workplace app"
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "apps": [
+        {
+          "id": "spotify",
+          "name": "Spotify",
+          "download": "https://download.scdn.co/SpotifyInstaller.zip",
+          "type": "app-installer",
+          "bundleId": "com.spotify.client",
+          "description": "Online music streaming app"
+        },
+        {
+          "id": "vlc",
+          "name": "VLC",
+          "download": "https://mirror.del.albony.in/videolan-ftp/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "org.videolan.vlc",
+          "description": "Media player with wide compatibility"
+        },
+        {
+          "id": "vox",
+          "name": "VOX",
+          "download": "https://cdn.vox.rocks/vox-player/releases/latest/VOX.dmg",
+          "type": "dmg",
+          "bundleId": "com.coppertino.Vox",
+          "description": "Music player with lossless quality support"
+        },
+        {
+          "id": "iina",
+          "name": "IINA",
+          "download": "https://dl.iina.io/IINA.v1.4.1.dmg",
+          "type": "dmg",
+          "bundleId": "com.colliderli.iina",
+          "description": "Modern media player for macOS"
+        },
+        {
+          "id": "plex",
+          "name": "Plex",
+          "download": "https://downloads.plex.tv/plex-desktop/1.112.0.359-0d79a49f/macos/Plex-1.112.0.359-0d79a49f-universal.zip",
+          "type": "zip",
+          "bundleId": "tv.plex.desktop",
+          "description": "Personal media library"
         }
       ]
     },
@@ -217,8 +249,8 @@
       ]
     },
     {
-      "id": "creativity",
-      "name": "Creativity",
+      "id": "image-and-graphics",
+      "name": "Image and Graphics",
       "apps": [
         {
           "id": "canva",
@@ -229,6 +261,30 @@
           "description": "Online graphic design tool"
         },
         {
+          "id": "figma",
+          "name": "Figma",
+          "download": "https://desktop.figma.com/mac-installer/Figma.dmg",
+          "type": "dmg",
+          "bundleId": "com.figma.Desktop",
+          "description": "UI and UX design tool"
+        },
+        {
+          "id": "pinta",
+          "name": "Pinta",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/2358713/cc1b8a73-23e1-45ad-9edb-0a84c03d30e9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-12T17%3A23%3A33Z&rscd=attachment%3B+filename%3DPinta-macos-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-12T16%3A23%3A25Z&ske=2026-04-12T17%3A23%3A33Z&sks=b&skv=2018-11-09&sig=O6dOd6%2Bq3VXmV5s5iGmfFf%2B%2BxAxKbENPE2Zd4mDEk6s%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NjAxMzgxMSwibmJmIjoxNzc2MDEyMDExLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.N3JpmNi15nDzODaNzNiWOsdHLvHaPmwZNCSMIKqQ21c&response-content-disposition=attachment%3B%20filename%3DPinta-macos-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "com.ximian.pinta",
+          "description": "Simple paint program"
+        },
+        {
+          "id": "inkscape",
+          "name": "Inkscape",
+          "download": "https://media.inkscape.org/dl/resources/file/Inkscape-1.4.3_arm64.dmg",
+          "type": "dmg",
+          "bundleId": "org.inkscape.Inkscape",
+          "description": "Vector graphics editor"
+        },
+        {
           "id": "gimp",
           "name": "GIMP",
           "download": "https://2.mirrors.in.sahilister.net/gimp/gimp/v3.0/macos/gimp-3.0.8-arm64-1.dmg",
@@ -237,28 +293,20 @@
           "description": "Image manipulation and photo editing software"
         },
         {
+          "id": "krita",
+          "name": "Krita",
+          "download": "https://mirrors.saswata.cc/kde/stable/krita/5.3.1/krita-5.3.1-signed.dmg",
+          "type": "dmg",
+          "bundleId": "org.krita",
+          "description": "Painting and animating tool"
+        },
+        {
           "id": "affinity",
           "name": "Affinity",
           "download": "https://downloads.affinity.studio/Affinity.dmg",
           "type": "dmg",
           "bundleId": "com.canva.affinity",
           "description": "All-in-one creative design software"
-        },
-        {
-          "id": "shotcut",
-          "name": "Shotcut",
-          "download": "https://excellmedia.dl.sourceforge.net/project/shotcut/v26.1.30/shotcut-macos-26.1.30.dmg?viasf=1",
-          "type": "dmg",
-          "bundleId": "com.Meltytech.Shotcut",
-          "description": "Cross-platform video editor"
-        },
-        {
-          "id": "audacity",
-          "name": "Audacity",
-          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/32921736/225cb6f7-1148-434d-9613-29e3fc93ce30?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T02%3A30%3A06Z&rscd=attachment%3B+filename%3Daudacity-macOS-3.7.7-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T01%3A29%3A55Z&ske=2026-02-04T02%3A30%3A06Z&sks=b&skv=2018-11-09&sig=XE0bIwrvGOp8ZkidHcrsvxbtjzEFVmcJNda66ZqH%2Bh8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDE3MDc2OSwibmJmIjoxNzcwMTY4OTY5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.bfa0VlvFGi4fF51XdhBw4OYJv-ErDQLGAjWTzWdV8bM&response-content-disposition=attachment%3B%20filename%3Daudacity-macOS-3.7.7-arm64.dmg&response-content-type=application%2Foctet-stream",
-          "type": "dmg",
-          "bundleId": "org.audacityteam.audacity",
-          "description": "Audio editor and recorder"
         },
         {
           "id": "blender",
@@ -271,9 +319,63 @@
       ]
     },
     {
+      "id": "audio-and-video",
+      "name": "Audio and Video",
+      "apps": [
+        {
+          "id": "openshot",
+          "name": "Openshot",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/36648301/2e4127c2-af87-4d0a-ac8f-d2d1ad33f1de?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-04-14T08%3A31%3A16Z&rscd=attachment%3B+filename%3DOpenShot-v3.5.1-x86_64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-04-14T07%3A30%3A20Z&ske=2026-04-14T08%3A31%3A16Z&sks=b&skv=2018-11-09&sig=ic9quOLjVlTAwvFTxAZcNQwDmfYfDZE8UMkllTkv1D0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3NjE1NjI5MSwibmJmIjoxNzc2MTUyNjkxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.TARP4b0s_8OmRtrWtAgPQsEuSzmQosvaEwtp77bXzP8&response-content-disposition=attachment%3B%20filename%3DOpenShot-v3.5.1-x86_64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "(null)",
+          "description": "Simple video editor"
+        },
+        {
+          "id": "shotcut",
+          "name": "Shotcut",
+          "download": "https://excellmedia.dl.sourceforge.net/project/shotcut/v26.1.30/shotcut-macos-26.1.30.dmg?viasf=1",
+          "type": "dmg",
+          "bundleId": "com.Meltytech.Shotcut",
+          "description": "Basic Video editor"
+        },
+        {
+          "id": "kdenlive",
+          "name": "Kdenlive",
+          "download": "https://mirror.maa.albony.in/kde/stable/kdenlive/25.12/macOS/kdenlive-25.12.2-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "org.kde.Kdenlive",
+          "description": "Powerful video editor"
+        },
+        {
+          "id": "audacity",
+          "name": "Audacity",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/32921736/225cb6f7-1148-434d-9613-29e3fc93ce30?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T02%3A30%3A06Z&rscd=attachment%3B+filename%3Daudacity-macOS-3.7.7-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T01%3A29%3A55Z&ske=2026-02-04T02%3A30%3A06Z&sks=b&skv=2018-11-09&sig=XE0bIwrvGOp8ZkidHcrsvxbtjzEFVmcJNda66ZqH%2Bh8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDE3MDc2OSwibmJmIjoxNzcwMTY4OTY5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.bfa0VlvFGi4fF51XdhBw4OYJv-ErDQLGAjWTzWdV8bM&response-content-disposition=attachment%3B%20filename%3Daudacity-macOS-3.7.7-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "org.audacityteam.audacity",
+          "description": "Audio editor and recorder"
+        },
+        {
+          "id": "obs",
+          "name": "OBS",
+          "download": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.0.4-macos-apple.dmg",
+          "type": "dmg",
+          "bundleId": "com.obsproject.obs-studio",
+          "description": "Screen-recording and live-streaming software"
+        }
+      ]
+    },
+    {
       "id": "games",
       "name": "Games and Launchers",
       "apps": [
+        {
+          "id": "minecraft",
+          "name": "Minecraft",
+          "download": "https://launcher.mojang.com/download/Minecraft.dmg",
+          "type": "dmg",
+          "bundleId": "com.mojang.minecraftlauncher",
+          "description": "Official launcher for Minecraft"
+        },
         {
           "id": "steam",
           "name": "Steam",
@@ -291,12 +393,12 @@
           "description": "Digital store for purchasing, downloading and playing games"
         },
         {
-          "id": "minecraft",
-          "name": "Minecraft",
-          "download": "https://launcher.mojang.com/download/Minecraft.dmg",
-          "type": "dmg",
-          "bundleId": "com.mojang.minecraftlauncher",
-          "description": "Official launcher for Minecraft"
+          "id": "gog",
+          "name": "GOG Galaxy",
+          "download": "https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.97.49.pkg",
+          "type": "pkg",
+          "bundleId": "com.gog.galaxy",
+          "description": "Library for games"
         }
       ]
     },
@@ -329,6 +431,14 @@
           "description": "Office suite with wide format compatibility"
         },
         {
+          "id": "writer",
+          "name": "Zoho Writer",
+          "download": "https://files-accl.zohopublic.com/public/zohowriter/download/mac_arm64",
+          "type": "pkg",
+          "bundleId": "com.zoho.writer.mac",
+          "description": "AI-powered collaborative word processor"
+        },
+        {
           "id": "notion",
           "name": "Notion",
           "download": "https://desktop-release.notion-static.com/Notion-7.3.1-universal.dmg",
@@ -343,6 +453,22 @@
           "type": "dmg",
           "bundleId": "md.obsidian",
           "description": "Markdown note-taking app"
+        },
+        {
+          "id": "evernote",
+          "name": "Evernote",
+          "download": "https://mac.desktop.evernote.com/builds/Evernote-latest.dmg",
+          "type": "dmg",
+          "bundleId": "com.evernote.Evernote",
+          "description": "Comprehensive note-taking app"
+        },
+        {
+          "id": "todoist",
+          "name": "Todoist",
+          "download": "https://electron-dl.todoist.net/mac/Todoist-darwin-9.26.4-arm64-latest.dmg",
+          "type": "dmg",
+          "bundleId": "com.todoist.mac.Todoist",
+          "description": "Task management and to-do list app"
         }
       ]
     },

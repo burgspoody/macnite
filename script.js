@@ -3,8 +3,6 @@ let allCategories = [];
 let activeFilter = 'all';
 const selectedApps = new Set();
 
-//  Load app list 
-
 fetch('applist.json')
     .then(response => response.json())
     .then(data => {
@@ -12,8 +10,6 @@ fetch('applist.json')
         renderApps();
         updateCount();
     });
-
-//  Render apps (respects active filter + search query) 
 
 function renderApps() {
     const query = document.getElementById('search-input').value.toLowerCase().trim();
@@ -34,7 +30,7 @@ function renderApps() {
 
         const header = document.createElement('div');
         header.className = 'category';
-        header.innerHTML = `${category.name} <span class="category-count">${filteredApps.length}</span>`;
+        header.innerHTML = `${category.name} <span class="category-count">${filteredApps.filter(app => selectedApps.has(app.id)).length}</span>`;
         section.appendChild(header);
 
         const grid = document.createElement('div');
@@ -52,11 +48,10 @@ function renderApps() {
                 hasInteracted = true;
                 if (selectedApps.has(app.id)) {
                     selectedApps.delete(app.id);
-                    card.classList.remove('selected');
                 } else {
                     selectedApps.add(app.id);
-                    card.classList.add('selected');
                 }
+                renderApps();
                 updateCount();
             });
 
@@ -83,8 +78,6 @@ function renderApps() {
     });
 }
 
-//  Update selected count + button state 
-
 function updateCount() {
     const count = selectedApps.size;
     document.getElementById('selected-count').textContent =
@@ -94,7 +87,6 @@ function updateCount() {
         document.getElementById('launch-macnite').classList.remove('visible');
     }
 }
-//  Category nav filtering 
 
 document.getElementById('category-nav').addEventListener('click', e => {
     const item = e.target.closest('.nav-item');
@@ -108,13 +100,9 @@ document.getElementById('category-nav').addEventListener('click', e => {
     renderApps();
 });
 
-//  Search filtering 
-
 document.getElementById('search-input').addEventListener('input', () => {
     renderApps();
 });
-
-//  Install button 
 
 document.getElementById('install-btn').addEventListener('click', e => {
     e.stopPropagation();
@@ -123,8 +111,6 @@ document.getElementById('install-btn').addEventListener('click', e => {
 
     document.getElementById('launch-macnite').classList.add('visible');
 });
-
-//  Launch MacNite button 
 
 document.getElementById('launch-macnite').addEventListener('click', e => {
     e.stopPropagation();

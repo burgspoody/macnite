@@ -7,7 +7,8 @@
 body {
   background-color: #070707;
   color: #FFFFE4;
-  font-family: "Helvetica Neue", "San Francisco", Arial;
+  font-family: "Inter Tight", "Helvetica Neue", "Arial";
+  font-weight: 500;
   overflow: hidden;
   min-height: 100vh;
 }
